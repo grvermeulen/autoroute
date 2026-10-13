@@ -1,0 +1,8 @@
+# Written by Claude Code when the mod loads; lists the tools of whoever loaded it.
+.claude-plugin/types/
+
+# Eval output and per-project state other plugins leave behind.
+evals/results/
+.claude/
+node_modules/
+*.log

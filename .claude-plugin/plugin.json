@@ -1,0 +1,30 @@
+{
+  "name": "autoroute",
+  "version": "0.1.0",
+  "description": "Routes each turn and subagent to the Claude model the task needs, with a prompt-cache-aware cost check.",
+  "author": { "name": "Guido" },
+  "license": "MIT",
+  "repository": "https://github.com/grvermeulen/autoroute",
+  "keywords": ["cost", "routing", "model-selection", "effort"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "fallbackClassifier": {
+      "type": "boolean",
+      "title": "Fallback classifier",
+      "description": "Ask Haiku for a label when the keyword rules abstain.",
+      "default": true
+    },
+    "savingMargin": {
+      "type": "number",
+      "title": "Saving margin",
+      "description": "Fraction a cheaper model must save, by estimate, before the router switches down.",
+      "default": 0.2
+    },
+    "cacheTtlMinutes": {
+      "type": "number",
+      "title": "Cache TTL (minutes)",
+      "description": "How long a model's prompt cache is assumed to stay warm after its last answer.",
+      "default": 60
+    }
+  }
+}

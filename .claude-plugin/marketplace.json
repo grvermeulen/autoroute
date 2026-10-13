@@ -1,0 +1,14 @@
+{
+  "name": "autoroute",
+  "owner": { "name": "Guido" },
+  "metadata": {
+    "description": "The autoroute mod for Claude Code: per-turn model routing with a prompt-cache-aware cost check."
+  },
+  "plugins": [
+    {
+      "name": "autoroute",
+      "source": "./",
+      "description": "Routes each turn and subagent to the Claude model the task needs, with a prompt-cache-aware cost check."
+    }
+  ]
+}
